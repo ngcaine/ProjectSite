@@ -1,0 +1,17 @@
+---
+title: "Visual Analytics Group Project Site"
+description: |
+  Welcome to the website. I hope you enjoy it!
+site: distill::distill_website
+---
+
+Hi, welcome to our group project website for visual analytics. Our group consist of Ting Yen-Hsin, He Qiyun and Ng Jianyuan Caine.
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+# Learn more about creating websites with Distill at:
+# https://rstudio.github.io/distill/website.html
+
+```
+

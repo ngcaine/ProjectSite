@@ -1,0 +1,13 @@
+---
+title: "About this site"
+description: |
+  Visual Analytics Group Project Webiste
+---
+
+Welcome to our group project website for group consiting of Ting Yen-Hsin, He Qiyun and Ng Jianyuan Caine
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+

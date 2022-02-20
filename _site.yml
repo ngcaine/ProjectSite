@@ -1,0 +1,23 @@
+name: "ProjectSite"
+title: "Visual Analytics Group Project Site"
+description: |
+  Visual Analytics Group Project Site
+output_dir: "_site"
+navbar:
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+  left:
+    - text: "Proposal"
+      href: WriteUp/proposal.html
+    - text: "Poster"
+      href: WriteUp/proposal.html
+    - text: "Application"
+      href: WriteUp/proposal.html
+    - text: "Application User Guide"
+      href: WriteUp/proposal.html
+    - text: "Research Paper"
+      href: WriteUp/proposal.html
+output: distill::distill_article
