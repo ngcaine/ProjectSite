@@ -13,11 +13,7 @@ navbar:
     - text: "Proposal"
       href: WriteUp/proposal.html
     - text: "Poster"
-      href: WriteUp/proposal.html
+      href: WriteUp/poster.html
     - text: "Application"
-      href: WriteUp/proposal.html
-    - text: "Application User Guide"
-      href: WriteUp/proposal.html
-    - text: "Research Paper"
-      href: WriteUp/proposal.html
+      href: WriteUp/application.html
 output: distill::distill_article

@@ -1,0 +1,34 @@
+---
+title: "Project Shiny Application - "
+description: |
+  Placeholder 
+author:
+  - name: He Qiyun, Ting Yen-Hsin,  Ng Jianyuan Caine
+    url: about.html
+    affiliation: SMU - MITB
+    affiliation_url: https://scis.smu.edu.sg/master-it-business
+date: "`r Sys.Date()`"
+output: 
+   distill::distill_article:
+     toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  fig.retina=3,
+  echo = TRUE,
+  eval = TRUE,
+  warning = FALSE,
+  message = FALSE
+  )
+```
+
+# 1.0 Project Application
+
+Final Shiny application could be found [here]().
+
+
+
+
+
+

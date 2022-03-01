@@ -7,6 +7,12 @@ site: distill::distill_website
 
 Hi, welcome to our group project website for visual analytics. Our group consist of Ting Yen-Hsin, He Qiyun and Ng Jianyuan Caine.
 
+# About
+
+This project is about building a visual analytics app for the purpose of ...
+
+
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 
