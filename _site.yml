@@ -16,4 +16,6 @@ navbar:
       href: WriteUp/poster.html
     - text: "Application"
       href: WriteUp/application.html
+    - text: "User Guide"
+      href: WriteUp/userguide.html
 output: distill::distill_article

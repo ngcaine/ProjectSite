@@ -9,7 +9,7 @@ Hi, welcome to our group project website for visual analytics. Our group consist
 
 # About
 
-This project is about building a visual analytics app for the purpose of ...
+This project is about building a visual analytics app to analyze time series trend of sales at a chain of department stores. Please reference to respective sections for detailds.
 
 
 
