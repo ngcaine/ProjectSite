@@ -39,7 +39,7 @@ This project hopes to address 3 issues. The first as mentioned in the previous s
 
 In addition, we hope to incorporate statistical analysis in an interactive format such that users can derive and verified strength of certain observations.
 
-Lastly, we wish to make use of time series visualization techniques such as cyclic plots and horizon plots to allow users to derive their patterns and trends from time series data. 
+Lastly, we wish to make use of time series visualization techniques such as cyclic plots and horizon plots to allow users to observe patterns and trends from time series data. 
 
 # 4.0 Proposed Scope and Methodology
 
