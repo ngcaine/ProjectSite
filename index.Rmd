@@ -1,7 +1,7 @@
 ---
-title: "Visual Analytics Group Project Site"
+title: "Visual Analytics Group 7 Project Site"
 description: |
-  Welcome to the website. I hope you enjoy it!
+  Welcome to the website. We hope you enjoy it!
 site: distill::distill_website
 ---
 
@@ -9,7 +9,7 @@ Hi, welcome to our group project website for visual analytics. Our group consist
 
 # About
 
-This project is about building a visual analytics app to analyze time series trend of sales at a chain of department stores. Please reference to respective sections for detailds.
+This project is about building a visual analytics app to analyze time series trend of sales at a chain of department stores. Please refer to respective sections for details.
 
 
 

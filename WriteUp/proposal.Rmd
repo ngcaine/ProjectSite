@@ -25,7 +25,7 @@ knitr::opts_chunk$set(
 
 # 1.0 Introduction
 
-The data set chosen for this project consist of time series data from series of Favorita department stores located in Ecuador found [here](https://www.kaggle.com/c/store-sales-time-series-forecasting). The focus of this project will be to develop an interactive visual analysis app that would allow the manager of a chain department stores to analyze the sales data for different stores, evaluate the strength of signals from different factors and time series performance of different stores to make an informed decision with regards to operations of the stores.
+The data set chosen for this project consist of time series data from series of Favorita department stores located in Ecuador found [here](https://www.kaggle.com/c/store-sales-time-series-forecasting). The focus of this project will be to develop an interactive visual analysis app that would allow the manager of the chain department stores to analyze the sales data for different stores, evaluate the strength of signals from different factors and time series performance of different stores to make an informed decision with regards to operations of the stores.
 
 # 2.0 Motivation
 
@@ -90,8 +90,8 @@ Bar charts could be used for exploration of sales by different categorical attri
 
 **Statistical Analysis of attributes**:
 
-- For statistical analysis boxplot for sales as shown by the picture displayed in the images below could be used. 
-- users can choose the type of statistical analysis for the graph and the statistical outcome will be displayed together with the graph to verify findings from exploratory analysis.
+- For statistical analysis boxplot of sales as shown by the picture displayed below could be used.
+- users can choose the type of statistical test for the graph and the statistical outcome will be displayed together with the graph to verify findings from exploratory analysis.
 - users can choose to choose other categorical variable such store type or store cluster.
 - users can also select the time range of sales data.
 
