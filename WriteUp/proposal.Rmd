@@ -1,7 +1,7 @@
 ---
-title: "Project Proposal - Department Store Sales App"
+title: "Project Proposal - Favorita - TSSI App: A time series analysis and cluster App"
 description: |
-  Interactive app to analyse sales trends
+  Interactive app to analyse and group time series sales trends
 author:
   - name: He Qiyun, Ting Yen-Hsin,  Ng Jianyuan Caine
     url: about.html
@@ -25,42 +25,49 @@ knitr::opts_chunk$set(
 
 # 1.0 Introduction
 
-The data set chosen for this project consist of time series data from series of Favorita department stores located in Ecuador found [here](https://www.kaggle.com/c/store-sales-time-series-forecasting). The focus of this project will be to develop an interactive visual analysis app that would allow the manager of the chain department stores to analyze the sales data for different stores, evaluate the strength of signals from different factors and time series performance of different stores to make an informed decision with regards to operations of the stores.
+The data set chosen for this project consist of time series data from series of Favorita department stores located in Ecuador found [here](https://www.kaggle.com/c/store-sales-time-series-forecasting). The focus of this project will be to develop an interactive visual analysis app that would allow the manager of the chain department stores to perform a time series analysis on store sales and group attributes based on time series patterns before further inspecting the data along generated groups.
 
 # 2.0 Motivation
 
-Data for transactions at convenience stores or eCommerce websites are freely available online for students and analysts to practice their analysis skills to derive insights. However, analysis and visualization often focus on presenting static insights or the development of models for customer analytics. Skills required for such analysis may take some deep learning of technical skills. While there are general graphic interface-based tools this may be out of reach or still require some technical skills to be effective.
+Data for transactions at convenience stores or eCommerce websites are freely available online for students and analysts to practice their analysis skills to derive insights. A common approach is to use unsupervised learning techniques such as k-means clustering or hierarchical clustering to group data together before further analyzing the groups for the unique traits. However possibility due to complexity or requirement for specialized enterprise software clustering of time series data is seldom done.
 
-In this project we wish to demonstrate how a customized R Shiny application would allow users without deep technical capabilities to perform similar technical analysis to draw their own insights with regards to operational decision of their outlets.
+The availability of R package dtwclust has allowed access to perform time series clustering without significant cost. However does require some familiarity with R code to access functions in the packages.
+
+In this project we wish to demonstrate how a customized R Shiny application would allow users without deep technical capabilities to perform analysis on their time series data to group different attributes along their time series data before further analysis into their group characteristics.
+
 
 # 3.0 Project Objectives
 
-This project hopes to address 3 issues. The first as mentioned in the previous section, regarding static results from analysis. This project hopes to provide an interactive platform for individuals to derive their own insights.
+This project aims to enable users of the app to perform a overview time series analysis, before grouping the data followed by analysis of the different groups.
 
-In addition, we hope to incorporate statistical analysis in an interactive format such that users can derive and verified strength of certain observations.
+To start, we wish to make use of time series visualization techniques such as horizon plots to allow users to observe, compare patterns and trends from time series data along different attributes and data ranges.
 
-Lastly, we wish to make use of time series visualization techniques such as cyclic plots and horizon plots to allow users to observe patterns and trends from time series data. 
+Next based on observations users could perform clustering using time series data. Using interactive drop down menus to configure various settings to performing the clustering. 
+Finally allow users to inspect results of the data along specific characteristics of the groups. For instance if group is done along geographic locations, maps would be displayed where the location of the groups are or for categorical attributes the sales values and contribution to total sales.
+
+In addition, we hope to incorporate other visualizations to explore the data such as overlay multiple time series for viewing and their relevant cyclic plots. Also statistical analysis in an interactive format such that users can derive and verified strength of certain observations.
+
 
 # 4.0 Proposed Scope and Methodology
 
 Prior to building the app the first step would be to do background research on the data to have a thorough understanding and possibilities with the data set. Followed by drafting and idea generation of possible visualizations that would meet required analytical purpose. For this project some of the subtask identified are:
 
-**Categorical Exploratory Analysis**:
+**Time Series Visualizations**:
 
-* Visualize transactions or sales across different categorical variables.
-*	Across stores, states, and product categories.
+* Visualize the time series data such that users could compare sales values across time along differt categorical attributes.
  
-**Statistical Analysis**:
+**Time Series Clustering**:
 
-*	Verify strength of differences between groups. 
-*	Differences in terms of sales for product categories, stores, or locations. 
+*	Application of time series dtw package in an interactive format for the scope of the data. 
+*	Return results for user to inspect and adjust model is necessary.
+* Relevant visualization such at users could inspect model results.
  
-**Time series visualization**: 
+**Results and data inspection**: 
 
-*	Time series visualization of data. 
-*	Product category sales across time periods. 
-*	Store or state sales across time periods. 
-*	Visualize effect of holidays on sale numbers 
+*	Appropriate data visualizations such that users could further analyise generated clusters. 
+*	Sales amount for members of various groups. 
+*	Geographic location is grouping along geographic factors. 
+*	Overlay of time series data for specific data points. 
 
 Project schedule is as follows:
 
@@ -68,6 +75,49 @@ Project schedule is as follows:
 
 
 # 5.0 Storyboard and Visualisation Features
+
+
+**Time Series Visualization - Horizon plot**:
+
+To start a horizon plot could be generated. Horizon plot allows for comparison of large number of categorical levels to for quick viewing of differences and seasonal trends.
+
+- user can choose whether to display the sales by city, state, or product category and the date range of data to display to visualize seasonality of products or overtime trend of sales across stores and cities.
+
+![](imgs/8.png)
+
+**Time Series Clustering**:
+
+Based on earlier results from above the user could then choose to perform time series clustering. 
+
+- The user could choose group the time series data along different categorical level available in the data such as state, cities or product categories.
+- Various settings for configuring the model would also be available. 
+- Appropriate visualization of the results such as time series line graph for partitional clustering of each group could be return for user to inspect correctness of the model.
+
+![](imgs/clustering1.png)
+
+- For hierarchical clustering a dendrogram would be returned.
+
+![](imgs/clustering2.png)
+**Results Dashboard**:
+
+Based on grouping generated the user could then inspect the groups to deep dive into similarity patterns.
+
+- Time series line chart of the original data would be return such that user could look into the trends.
+- Boxplot of sales among members of the group would be displayed.
+- Clustering is perform along geographic attribute, then a map and location of the groups would be displayed.
+
+![](imgs/clusteringresults.png)
+
+**Time Series Results Deep Dive**:
+
+Lastly the user to return to the data through time-series line graphs and day of the week cyclic plots to deep dive into specific trends
+
+- Different from earlier chart at this part user could choose specific categorical levels to overlay on top of each other to see their similarities.
+
+![](imgs/6.png)
+
+Below are additional visualizations proposed explore the data further.
+
 
 **Exploratory Analysis**: 
 
@@ -100,24 +150,6 @@ Bar charts could be used for exploration of sales by different categorical attri
 
 ![](imgs/5.png)
 
-**Time Series Visualization**:
-
-To visualize different time series trends:
-
-- horizon plot for sales across time could be used.
-- user can choose whether to display the sales by city, state, or product category and the date range of data to display to visualize seasonality of products or overtime trend of sales across stores and cities.
-
-![](imgs/8.png)
-
-- Through line charts of sales where user can choose the store ID, the user could check the sales overtime for each store over a date range.
-- Corresponding day of the week cyclic plot could be used to display purchasing trends on different days on the week.
-
-![](imgs/6.png)
-
-- Similar chart could be generated for product categories. Where overtime trends of each product category is show and their weekly trends.
-
-![](imgs/7.png)
-
 # 6.0 R Packages
 
 The following R packages are expected to be used for this project:
@@ -129,6 +161,12 @@ The following R packages are expected to be used for this project:
 *	corrplot: https://cran.r-project.org/web/packages/corrplot
 *	DT: https://cran.r-project.org/web/packages/DT
 *	ggHoriPlot: https://rivasiker.github.io/ggHoriPlot/index.html
+* dtwclust: https://github.com/asardaes/dtwclust
+* lubridate:https://lubridate.tidyverse.org/
+* ggstatsplot: https://indrajeetpatil.github.io/ggstatsplot/
+* tmap: https://r-tmap.github.io/tmap/
+* ggmosaic: https://haleyjeppson.github.io/ggmosaic/
+* treemapify: https://r-charts.com/part-whole/treemapify/
 
 
 # 8.0 Team Members
@@ -139,6 +177,9 @@ The following R packages are expected to be used for this project:
 
 # 9.0 References
 
-Dataset: https://www.kaggle.com/c/store-sales-time-series-forecasting/data
+* Dataset: https://www.kaggle.com/c/store-sales-time-series-forecasting/data
+* Dtwclust - Time Series Clustering Package: https://github.com/asardaes/dtwclust
+* Samples using package (DTW) - https://damien-datasci-blog.netlify.app/post/time-series-clustering-with-dynamic-time-warp/
+* Sample Clustering with traffic data: https://samstehle.github.io/TrafficClustering.html
 
 
