@@ -1,0 +1,58 @@
+---
+title: Favorita TSSI APP  A time series analysis and clustering App
+author:
+  - name: He Qiyun
+    affil: 1
+  - name: Ting Yen-Hsin
+    affil: 1
+  - name: Ng Jianyuan Caine
+    affil: 1
+affiliation:
+  - num: 1
+    address: Singapore Management University - MITB
+    
+
+
+column_numbers: 3
+
+output: 
+  posterdown::posterdown_html:
+    self_contained: false
+bibliography: packages.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Issues and Problems
+
+Data for transactions at convenience stores or eCommerce websites are freely available online for students and analysts to practice their analysis skills to derive insights. A common approach is to use unsupervised learning techniques such as k-means clustering or hierarchical clustering to group data together before further analyzing the groups for the unique traits.
+
+However possibility due to complexity or requirement for specialized enterprise software clustering of time series data is seldom done.
+
+# Motivation
+
+The availability of R package dtwclust has allowed access to perform time series clustering without significant cost. However does require some familiarity with R code to access functions in the packages.
+
+In this project we wish to demonstrate how a customized R Shiny application would allow users without deep technical capabilities to perform analysis on their time series data to group different attributes along their time series data before further analysis into their group characteristics.
+
+# Approach
+
+This package uses the same workflow approach as the R Markdown you know and love. Basically it goes from RMarkdown \> Knitr \> Markdown \> Pandoc \> HTML/CSS \> PDF. You can even use the bibliography the same way [@R-posterdown].
+
+# Results
+
+![](imgs/8.png =x300)
+
+Usually you want to have a nice table displaying some important results that you have calculated. In `posterdown` this is as easy as using the `kable` table formatting you are probably use to as per typical R Markdown formatting.
+
+![](imgs/clusteringresults.png =x300)
+
+You can reference tables like so: Table \@ref(tab:mytable). Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat augue at velit tincidunt semper. Donec elementum porta posuere. Nullam interdum, odio at tincidunt feugiat, turpis nisi blandit eros, eu posuere risus felis non quam. Nam eget lorem odio. Duis et aliquet orci. Phasellus nec viverra est.
+
+![](imgs/clustering1.png =x300)
+
+# Future Work
+
+Aliquam sed faucibus risus, quis efficitur erat. Vestibulum semper mauris quis tempus eleifend. Aliquam sagittis dictum ipsum, quis viverra ligula eleifend ut. Curabitur sagittis vitae arcu eget faucibus. In non elementum felis. Duis et aliquam nunc. Nunc pulvinar sapien nunc, vel pretium nisi efficitur in. Fusce fringilla maximus leo et maximus. Fusce at ligula laoreet, iaculis mi at, auctor odio. Praesent sed elementum justo. Aenean consectetur risus rhoncus tincidunt efficitur. Praesent dictum mauris at diam maximus maximus [@R-posterdown].

@@ -89,27 +89,27 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_meta_tags-->
   <title>Visual Analytics Group Project Site: Visual Analytics Group 7 Project Site</title>
 
-  <meta property="description" itemprop="description" content="Welcome to the website. We hope you enjoy it!"/>
+  <meta property="description" itemprop="description" content="Favorita TSSI - A times series Analysis App"/>
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
   <meta property="og:title" content="Visual Analytics Group Project Site: Visual Analytics Group 7 Project Site"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="Welcome to the website. We hope you enjoy it!"/>
+  <meta property="og:description" content="Favorita TSSI - A times series Analysis App"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Visual Analytics Group Project Site"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
   <meta property="twitter:title" content="Visual Analytics Group Project Site: Visual Analytics Group 7 Project Site"/>
-  <meta property="twitter:description" content="Welcome to the website. We hope you enjoy it!"/>
+  <meta property="twitter:description" content="Favorita TSSI - A times series Analysis App"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","site"]}},"value":[{"type":"character","attributes":{},"value":["Visual Analytics Group 7 Project Site"]},{"type":"character","attributes":{},"value":["Welcome to the website. We hope you enjoy it!\n"]},{"type":"character","attributes":{},"value":["distill::distill_website"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","site"]}},"value":[{"type":"character","attributes":{},"value":["Visual Analytics Group 7 Project Site"]},{"type":"character","attributes":{},"value":["Favorita TSSI - A times series Analysis App\n"]},{"type":"character","attributes":{},"value":["distill::distill_website"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2057,7 +2057,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Visual Analytics Group 7 Project Site","description":"Welcome to the website. We hope you enjoy it!","authors":[]}
+{"title":"Visual Analytics Group 7 Project Site","description":"Favorita TSSI - A times series Analysis App","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2086,7 +2086,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <h1>Visual Analytics Group 7 Project Site</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>Welcome to the website. We hope you enjoy it!</p></p>
+<p><p>Favorita TSSI - A times series Analysis App</p></p>
 </div>
 
 
@@ -2096,6 +2096,37 @@ group consist of Ting Yen-Hsin, He Qiyun and Ng Jianyuan Caine.</p>
 <p>This project is about building a visual analytics app to analyze time
 series trend of sales at a chain of department stores. Please refer to
 respective sections for details.</p>
+<h1 id="abstract">Abstract</h1>
+<p>Data for transactions at convenience stores or eCommerce websites are
+freely available online for students and analysts to practice their
+analysis skills to derive insights. A common approach would be to use
+unsupervised learning techniques such as k-means clustering or
+hierarchical clustering to group data together before further analyzing
+the groups for the unique traits. However, possibility due to complexity
+or requirement for specialized enterprise software clustering of time
+series data is seldom done.</p>
+<p>The availability of R package dtwclust has allowed access to perform
+time series clustering without significant cost. However, does require
+some familiarity with R code to access functions in the packages.</p>
+<p>In this project we wish to demonstrate how a customized R Shiny
+application would allow users without deep technical capabilities to
+perform analysis on their time series data to group different attributes
+along their time series data before further analysis into their group
+characteristics.</p>
+<p>The data set chosen for this project consist of time series data from
+series of Favorita department stores located in Ecuador found <a
+href="https://www.kaggle.com/c/store-sales-time-series-forecasting">here</a>.
+The focus of this project will be to develop an interactive visual
+analysis app that would allow the manager of the chain department stores
+to perform a time series analysis on store sales and group attributes
+based on time series patterns before further inspecting the data along
+generated groups.</p>
+<p>Using appropriate time series visualizations such as horizon plots
+users could compare difference and observe seasonal trends. Clustering
+could then be performed along different categorical variables. Results
+are then return in relevant graphs for results inspection. Based on
+groups appropriate dashboard is generated for users to deep dive into
+the data.</p>
 <div class="sourceCode" id="cb1"><pre
 class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->

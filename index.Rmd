@@ -1,13 +1,25 @@
 ---
 title: "Visual Analytics Group 7 Project Site"
 description: |
-  Welcome to the website. We hope you enjoy it!
+  Favorita TSSI - A times series Analysis App
 site: distill::distill_website
 ---
 
 Hi, welcome to our group project website for visual analytics. Our group consist of Ting Yen-Hsin, He Qiyun and Ng Jianyuan Caine.
 
 This project is about building a visual analytics app to analyze time series trend of sales at a chain of department stores. Please refer to respective sections for details.
+
+# Abstract
+
+Data for transactions at convenience stores or eCommerce websites are freely available online for students and analysts to practice their analysis skills to derive insights. A common approach would be to use unsupervised learning techniques such as k-means clustering or hierarchical clustering to group data together before further analyzing the groups for the unique traits. However, possibility due to complexity or requirement for specialized enterprise software clustering of time series data is seldom done.
+
+The availability of R package dtwclust has allowed access to perform time series clustering without significant cost. However, does require some familiarity with R code to access functions in the packages.
+
+In this project we wish to demonstrate how a customized R Shiny application would allow users without deep technical capabilities to perform analysis on their time series data to group different attributes along their time series data before further analysis into their group characteristics.
+
+The data set chosen for this project consist of time series data from series of Favorita department stores located in Ecuador found [here](https://www.kaggle.com/c/store-sales-time-series-forecasting). The focus of this project will be to develop an interactive visual analysis app that would allow the manager of the chain department stores to perform a time series analysis on store sales and group attributes based on time series patterns before further inspecting the data along generated groups.
+
+Using appropriate time series visualizations such as horizon plots users could compare difference and observe seasonal trends. Clustering could then be performed along different categorical variables. Results are then return in relevant graphs for results inspection. Based on groups appropriate dashboard is generated for users to deep dive into the data.
 
 
 
