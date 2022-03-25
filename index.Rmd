@@ -1,7 +1,7 @@
 ---
-title: "Visual Analytics Group 7 Project Site"
+title: "Favorita TSSI - A Time series sales insight App"
 description: |
-  Favorita TSSI - A times series Analysis App
+  Enabling analysis and grouping of time series data.
 site: distill::distill_website
 ---
 
