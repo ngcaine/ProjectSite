@@ -1,7 +1,7 @@
 ---
-title: "Project Shiny Application - "
+title: "Favorita TSSI - Project Application"
 description: |
-  Placeholder 
+  Access link to Favorita TSSI Application
 author:
   - name: He Qiyun, Ting Yen-Hsin,  Ng Jianyuan Caine
     url: about.html

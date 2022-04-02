@@ -1,7 +1,7 @@
 ---
-title: "Shiny Application User Guide - "
+title: "Favorita TSSI - Application User Guide"
 description: |
-  Placeholder 
+  Access link to Favorita TSSI application user guide
 author:
   - name: He Qiyun, Ting Yen-Hsin,  Ng Jianyuan Caine
     url: about.html
@@ -25,7 +25,7 @@ knitr::opts_chunk$set(
 
 # 1.0 Application User Guide
 
-Application User guide could be found [here]().
+Application User guide could be found [here](https://github.com/ngcaine/ProjectSite/blob/master/WriteUp/UserGuide/User-Guide.pdf).
 
 
 
