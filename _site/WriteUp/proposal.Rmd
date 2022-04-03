@@ -50,11 +50,11 @@ In addition, we hope to incorporate other visualizations to explore the data suc
 
 # 4.0 Proposed Scope and Methodology
 
-Prior to building the app the first step would be to do background research on the data to have a thorough understanding and possibilities with the data set. Followed by drafting and idea generation of possible visualizations that would meet required analytical purpose. For this project some of the subtask identified are:
+Prior to building the app the first step would be to do background research on the data to have a thorough understanding and possibilities with the data set. Followed by drafting and idea generation of possible visualizations that would meet required analytical purpose. For this project some of the sub task identified are:
 
 **Time Series Visualizations**:
 
-* Visualize the time series data such that users could compare sales values across time along differt categorical attributes.
+* Visualize the time series data such that users could compare sales values across time along different categorical attributes.
  
 **Time Series Clustering**:
 
@@ -81,7 +81,7 @@ Project schedule is as follows:
 
 To start a horizon plot could be generated. Horizon plot allows for comparison of large number of categorical levels to for quick viewing of differences and seasonal trends.
 
-- user can choose whether to display the sales by city, state, or product category and the date range of data to display to visualize seasonality of products or overtime trend of sales across stores and cities.
+- user could choose whether to display the sales either by city, state, or product category and the date range of data to visualize seasonality of products or overtime trend of sales across stores and cities.
 
 ![](imgs/8.png)
 
@@ -100,17 +100,17 @@ Based on earlier results from above the user could then choose to perform time s
 ![](imgs/clustering2.png)
 **Results Dashboard**:
 
-Based on grouping generated the user could then inspect the groups to deep dive into similarity patterns.
+Based on grouping generated the user could then inspect the groups to deep dive into similarities in the groups.
 
 - Time series line chart of the original data would be return such that user could look into the trends.
 - Boxplot of sales among members of the group would be displayed.
-- Clustering is perform along geographic attribute, then a map and location of the groups would be displayed.
+- If clustering is perform along a geographic attribute, then a map and location of the groups would be displayed.
 
 ![](imgs/clusteringresults.png)
 
 **Time Series Results Deep Dive**:
 
-Lastly the user to return to the data through time-series line graphs and day of the week cyclic plots to deep dive into specific trends
+Lastly the user could return to the data through time-series line graphs and day of the week cyclic plots to deep dive into specific trends
 
 - Different from earlier chart at this part user could choose specific categorical levels to overlay on top of each other to see their similarities.
 
@@ -141,9 +141,9 @@ Bar charts could be used for exploration of sales by different categorical attri
 **Statistical Analysis of attributes**:
 
 - For statistical analysis boxplot of sales as shown by the picture displayed below could be used.
-- users can choose the type of statistical test for the graph and the statistical outcome will be displayed together with the graph to verify findings from exploratory analysis.
-- users can choose to choose other categorical variable such store type or store cluster.
-- users can also select the time range of sales data.
+- users could choose the type of statistical test for the graph and the statistical outcome will be displayed together with the graph to verify findings from exploratory analysis.
+- users could choose to choose other categorical variable such store type or store cluster.
+- users could also select the time range of sales data.
 
 ![](imgs/4.png)
 
