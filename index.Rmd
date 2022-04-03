@@ -7,7 +7,7 @@ site: distill::distill_website
 
 Hi, welcome to our group project website for visual analytics. Our group consist of Ting Yen-Hsin, He Qiyun and Ng Jianyuan Caine.
 
-This project is about building a visual analytics app to analyze time series trend of sales at a chain of department stores. Please refer to respective sections for details.
+This project is about building a visual analytics app to enable a chain to department stores to analyse and perform clustering with time series data.
 
 # Abstract
 
